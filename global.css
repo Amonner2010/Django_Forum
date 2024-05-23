@@ -1,0 +1,157 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000000;
+    color: #FEFEFE;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: #FF0042;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+/* Navbar */
+.navbar{
+    align-items: center;
+    display: flex;
+}
+
+.navigation {
+    background-color: #52057b;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    max-height: 80px;
+    padding: 10px;
+    width: 65%;
+}
+
+.nav-list {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav-item a {
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 20px;
+    margin-inline: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-item a:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.close-icon i {
+    cursor: pointer;
+    float: left;
+    font-size: 60px;
+}
+
+.hide {
+    display: none;
+}
+
+.bar-icon {
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 60px;
+    margin-right: 10px;
+}
+
+@font-face {
+    font-family: aquire;
+    src: url(aquire.otf);
+}
+
+.brand {
+    display: inline-block;
+    font-family: aquire;
+    font-size: 60px;
+}
+
+/* Navbar for smartphones */
+@media screen and (max-width: 460px) {
+    .navigation {
+        max-height: auto;
+    }
+    
+    .nav-item a {
+        display: inline;
+        float: left;
+        font-size: 10px;
+        margin-inline: 3px;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .close-icon i {
+        font-size: 30px;
+    }
+    
+    .brand {
+        font-size: 20px;
+    }
+}
+
+/* Search Box */
+.search-box {
+    border: solid 1px #52057b;
+    box-shadow: 1px 2px 3px #52075b;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+.search-box select {
+    padding: 10px;
+}
+
+.search-box input {
+    padding: 10px;
+}
+
+.search-box button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+}
+
+.search-box button:hover {
+    background-color: #000;
+    box-shadow: 1px 2px 3px #fff;
+    color: #fff;
+}
+
+/* Search Box for smart phones*/
+@media screen and (max-width: 460px) {
+    .search-box input, .search-box button, .search-box select {
+        margin-top: 5px;
+        min-width: 300px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #52057b;
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}

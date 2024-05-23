@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyForum</title>
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="detail.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <nav class="navigation hide" id="navigation">
+                    <ul class="nav-list">
+                        <span class="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                        <li class="nav-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Forum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Detail</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+                <div class="brand">MyForum</div>
+            </div>
+            <!-- Search Box -->
+            <div class="search-box">
+                <div>
+                    <select name="" id="" disabled="disabled">
+                        <option value="everything">Everything</option>
+                        <option value="titles">Titles</option>
+                        <option value="descriptions">Descriptions</option>
+                    </select>
+                    <input type="text" name="q" id="" placeholder="search...">
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="navigate">
+                <span><a href="">MyForum</a> >> <a href="">Random Forum</a> >> <a href="">Random Post</a></span>
+            </div>
+
+            <div class="topic-container">
+                <div class="head">
+                    <div class="authors">Author</div>
+                    <div class="content">Topic: Post's title (read 1258 Times)</div>
+                </div>
+
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="#">Username</a></div>
+                        <div>Role</div>
+                        <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
+                        <div>Posts: <u>45</u></div>
+                        <div>Points: <u>5423</u></div>
+                    </div>
+
+                    <div class="content">
+                        Just the random content of a random post.<br>
+                        To see how it looks <br><br>
+                        Nothing else... <br><br><hr>
+                        Regards Username
+                        <div class="comment">
+                            <button onclick="showComment()">Comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comment Input -->
+            <div class="comment-area hide" id="comment-area">
+                <textarea name="comment" id="" placeholder="Comment here..."></textarea>
+                <input type="submit" name="" id="" value="submit">
+            </div>
+
+            <!-- Show Comments -->
+            <div class="comments-container">
+                <div class="head">
+                    <div class="authors">Author</div>
+                    <div class="content">Comments</div>
+                </div>
+
+                <div class="body">
+                    <div class="authors">
+                        <div class="AnotherUser"><a href="#">Username</a></div>
+                        <div>Role</div>
+                        <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
+                        <div>Posts: <u>45</u></div>
+                        <div>Points: <u>5423</u></div>
+                    </div>
+
+                    <div class="content">
+                        Just a random comment of a random post.<br>
+                        To see how it looks <br><br>
+                        Nothing else... <br><br><hr>
+                        Regards Username
+                        <div class="comment">
+                            <button onclick="showReply()">Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reply Input -->
+            <div class="comment-area hide" id="reply-area">
+                <textarea name="comment" id="" placeholder="Reply here..."></textarea>
+                <input type="submit" name="" id="" value="submit">
+            </div>
+        </div>
+
+        <footer>
+            <span>&copy; &nbsp; Aidan Monner | All rights reserved</span>
+        </footer>
+
+        <script src="global.js"></script>
+    </body>
+</html>

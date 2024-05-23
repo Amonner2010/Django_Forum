@@ -1,0 +1,105 @@
+.container {
+    margin: 20px;
+    padding: 20px;
+}
+
+.table-head {
+    display: flex;
+}
+
+.table-head div {
+    background-color: #2C2C2C;
+    font-weight: bold;
+    margin: 2px;
+    padding: 5px;
+}
+
+.table-head .status {
+    flex: 5%;
+}
+
+.table-head .subjects {
+    flex: 70%;
+}
+
+.table-head .replies {
+    flex: 10%;
+}
+
+.table-head .last-reply {
+    flex: 15%;
+}
+
+/* Table Body */
+.table-row {
+    display: flex;
+}
+
+.table-row div {
+    background-color: #2C2C2C;
+    margin: 2px;
+    padding: 5px;
+}
+
+.table-row .status {
+    flex: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.table-row .subjects {
+    flex: 70%;
+}
+
+.table-row .replies {
+    flex: 10%;
+}
+
+.table-row .last-reply {
+    flex: 15%;
+}
+
+/* Pagination */
+.pagination {
+    font-size: 15px;
+    padding: 20px;
+}
+
+.pagination a{
+    border: solid 0.5px #fff;
+    color: #fff;
+    margin-inline: 5px;
+    padding: 5px 10px;
+}
+
+.pagination a:hover {
+    opacity: 0.5;
+}
+
+/* Navigation */
+.navigate {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-block: 20px;
+}
+
+.navigate a {
+    color: #fff;
+}
+
+.navigate a:hover {
+    color: #FF0042;
+    font-weight: bolder;
+}
+
+/* Note */
+.note {
+    background-color: #111314;
+    display: block;
+    padding: 20px;
+}
+
+.note span {
+    font-size: 20px;
+    margin-block: 5px;
+}
